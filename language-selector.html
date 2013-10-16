@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Beautiful Language Selector with Jquery</title>
+<link rel="stylesheet" href="language-selector.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="jquery.language-selector.js"></script>
+</head>
+<body>
+  <div class="language-selector">
+    <div tabindex="1" id="dk_container_herolist" class="dk_container language-selector-width dk_shown dk_theme_default">
+      <a class="dk_toggle"><span class="dk_label">Choose your Language</span><span class="select-icon"></span></a>
+        <div class="dk_options">
+          <ul class="dk_options_inner">
+            <li class=""><a data-dk-dropdown-value="CH">Chinese</a></li>
+            <li class="dk_option_current"><a data-dk-dropdown-value="EN">English</a></li>
+            <li class=""><a data-dk-dropdown-value="FR">French</a></li>
+            <li class=""><a data-dk-dropdown-value="SP">Spanish</a></li>
+          </ul>
+        </div>
+    </div>
+    <select name="languageselector" tabindex="1" class="span3" value="Choose your Language" style="display: none;">
+      <option value="CH">Chinese</option>
+      <option selected="selected" value="EN">English</option>
+      <option value="FR">French</option>
+      <option value="SP">Spanish</option>
+    </select>
+  </div>    
+</body>
+</html>

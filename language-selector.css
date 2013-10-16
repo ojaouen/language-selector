@@ -1,0 +1,182 @@
+/*  Created by Olivier Jaouen. Copyright 2013 - Hit me up at twitter.com/ojaouen                   */
+
+
+/* Body
+================================================== */
+html, body {
+  height: 100%;
+}
+body {
+  overflow-x: hidden;
+  font-family: "helvetica neue", "helvetica", arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #333;
+  background: #e8e8e8;
+}
+
+
+/* Language Selector
+================================================== */
+
+.language-selector{
+    width:300px; /*change width here*/
+    margin:200px auto 0;
+}
+.language-selector-width {
+  width:300px; /*change width here*/
+}
+.language-selector li {
+    width: 294px;
+    margin-bottom: 0px;
+}
+.dk_container {
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+  outline: none; }
+
+.dk_toggle {
+  background-color: #df4135; /*change background color here*/
+  color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 11px 45px 11px 13px;
+  text-decoration: none;
+  white-space: nowrap;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-backface-visibility: hidden; }
+.dk_toggle:hover, .dk_toggle:focus, .dk_focus .dk_toggle {
+    background-color: #f04639;
+    color: white;
+    outline: none; }
+  .dk_toggle:active {
+    background-color: #f04639;
+    outline: none; }
+    .dk_toggle:active .select-icon {
+      border-left-color: transparent; }
+
+.select-icon {
+  background: #df4135 url("language-selector-arrow.png") no-repeat right center;
+  border-left: 2px solid rgba(52, 73, 94, 0.1);
+  border-radius: 0 6px 6px 0;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 42px;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-backface-visibility: hidden; }
+
+.dk_open {
+  z-index: 10; }
+ .dk_toggle {
+    background-color: #f04639; }
+    .dk_open .dk_toggle .select-icon {
+      background-color: #f04639;
+      border-left-color: transparent; }
+
+.dk_options {
+  padding-top: 14px; }
+  .dk_options:before {
+    content: "";
+    border-style: solid;
+    border-width: 0 9px 9px 9px;
+    border-color: transparent transparent #34495E transparent;
+    height: 0px;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    width: 0px;
+    -webkit-transform: rotate(360deg); }
+  .dk_options:before {
+    left: auto;
+    right: 12px; }
+  .dk_options li {
+    padding-bottom: 3px; }
+  .dk_options a {
+    border-radius: 3px;
+    color: white;
+    display: block;
+    padding: 5px 9px;
+    text-decoration: none;
+    -webkit-transition: all .2s ease-in;
+       -moz-transition: all .2s ease-in;
+        -ms-transition: all .2s ease-in;
+         -o-transition: all .2s ease-in;
+            transition: all .2s ease-in; }
+    .dk_options a:hover {
+      background-color: #f04639;
+      color:#FFFFFF; }
+
+.dk_option_current a, .dk_option_current a:hover {
+  background-color: #f04639;
+      color:#FFFFFF; }
+
+.dk_options_inner {
+  background-color: #34495E;
+  border-radius: 5px;
+  margin: 0;
+  max-height: 244px;
+  padding: 3px 3px 0; }
+
+.dk_touch .dk_options {
+  max-height: 250px; }
+
+.dk_container {
+  display: none;
+  position: relative;
+  vertical-align: middle; }
+  .dk_container.dk_shown {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+  .dk_container[class*="span"] {
+    float: none;
+    margin-left: 0; }
+
+.dk_toggle {
+  display: block;
+  position: relative; }
+
+.dk_open {
+  position: relative; }
+  .dk_open .dk_options {
+    margin-top: -1px;
+    opacity: 1;
+    z-index: 10;
+    display: block\9; }
+  .dk_open .dk_label {
+    color: inherit; }
+
+.dk_options {
+  margin-top: -21px;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  width: 300px;
+  z-index: -100;
+  display: none\9;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  -webkit-backface-visibility: hidden; }
+  .select-right .dk_options {
+    left: auto;
+    right: 0; }
+  .dk_options a {
+    display: block; }
+
+.dk_options_inner {
+  overflow: auto;
+  outline: none;
+  position: relative; }
+
